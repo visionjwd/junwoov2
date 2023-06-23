@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>JunWoo's Website</title>
+        <title>JunWoo&#39;s Website</title>
         <meta name="description" content="JunWoo's portfolio website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
