@@ -1,0 +1,48 @@
+.wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+}
+.skills{
+    width: 50px;
+    height: auto;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.hidden{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #f2f4f5 5%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+}
+.hidden h4{
+    text-align: center;
+    font-size: 15px;
+}
+.wrap:hover{
+    transform: scale(0.97);
+    text-shadow: 0 0 2px #fff; 
+}
+.hidden:hover{
+    opacity: 1;
+}
+@media only screen and (max-width: 850px){
+    .skills{
+        width: 42px;
+    }
+    .hidden h4{
+        font-size: 13px;
+    }
+}
+

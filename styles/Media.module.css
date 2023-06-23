@@ -1,0 +1,165 @@
+.main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.contents{
+    flex: 85%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    width: 90%;
+    //height: 100%;
+    padding: 2%;
+}
+.mediacontainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.clickable{
+    margin: 2%;
+    height: 100%;
+    width: 100%;
+}
+.imageDiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 50%;
+    transition: all 0.5s ease-out;
+}
+.imageDiv:hover{
+    transform: scale(0.98);
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0), rgba(250,250,250,0.9));
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlayText{
+    width: 80%;
+    padding-top: 10%;
+}
+.overlayText h2, .overlayText p{
+    text-shadow: rgba(0,0,0,0.8)
+}
+.contentimage{
+    height: 32vw;
+    width: auto;
+    border-radius: 15px;
+    border: 5px solid #f2f4f5;
+    overflow: hidden;
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 4%;
+}
+.buttonContainer button{
+    padding: 12px 20px;
+}
+
+.title{
+    flex: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title svg{
+    font-size: 50px;
+    margin-bottom: 20%;
+}
+.title h1{
+    font-size: 80px;
+    writing-mode: vertical-lr;
+}
+@media only screen and (max-width: 900px){
+    .main{
+        height: 100%;
+        overflow: visible;
+    }
+    .content{
+        flex: 100%;
+        width: 100%;
+    }
+    .title{
+        display: none;
+    }
+    .text h2{
+        font-size: 20px;
+    }
+    .text{
+        //width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .mediacontainer{
+        margin-top: 10%;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediacontainer h2{
+        font-size: 15px;
+    }
+    .clickable{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contentimage{
+        width: 80%;
+        height: auto;
+    }
+    .overlay{
+        width: 80%;
+    }
+    .overlayText{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .overlayText p{
+        display: none;
+    }
+}

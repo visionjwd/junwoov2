@@ -1,0 +1,21 @@
+.wrapper{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #96ab7a;
+    border: 2px solid #96ab7a;
+    transition: all 0.4s;
+    margin-bottom: 4%;
+}
+.wrapper:hover{
+    border: 2px solid black;
+    background: #788861;
+}
+.wrapper svg{
+    font-size: 60px;
+    color: white;
+}

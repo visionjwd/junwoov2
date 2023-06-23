@@ -1,0 +1,81 @@
+.wrapper{
+    width: 100%;
+    aspect-ratio: 16/11;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    margin-bottom: 5%;
+}
+.under{
+    position: absolute;
+    border-radius: 10px;
+    width: 90%;
+    height: 80%;
+    background: #f2f4f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 50px rgba(100,100,100),
+                -20px -20px 60px #ffffff;
+}
+.under h3{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 90%;
+}
+.main{
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 5px solid #e4eaee;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease-out;
+}
+.main:hover{
+    transform: translateY(18%) scale(0.98);
+    border: 2px solid white;
+    box-shadow: 0 0 5px #fff,
+                0 0 7px rgba(0,0,0,0.5),
+                0 0 15px #7a96ab,
+                0 0 30px #6a8aa1;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.mainContainer h2{
+    padding-top: 20%;
+    color: white;
+}
+.over{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 0;
+    background: linear-gradient(rgba(0,0,0,0.5) 5%, rgba(0,0,0,0.9) 97%);
+    transition: all 0.5s ease-out;
+}
+.over:hover{
+    opacity: 1;
+}
+.overContainer{
+    poasition: absolute;
+    width: 90%;
+    color: white;
+}
+

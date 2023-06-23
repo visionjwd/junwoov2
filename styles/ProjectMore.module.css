@@ -1,0 +1,11 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background: #dfe5eb;
+    background-image: url('../Assets/noise.png');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

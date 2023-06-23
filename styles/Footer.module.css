@@ -1,0 +1,38 @@
+.main{
+    width: 100%;
+    height: 10vh;
+    padding-bottom: 20px;
+    background: rgba(250,250,250,1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+    background: #f2f4f5;
+    box-shadow: 5px 5px 10px #bebebe,
+                  -5px -5px 10px #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.wrap, .text{
+    flex: 50%;
+}
+.text{
+
+}
+.image{
+    width: 100px;
+    height: auto;
+    margin-left: 8%;
+}
+.text p{
+    width: 90%;
+    text-align: right;
+    font-size: 10px;
+}
