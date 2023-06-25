@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
 import Link from 'next/link'
 import logo from '../Assets/junwoologoblack.png'
+import logo2 from '../Assets/junwoologowhite.png'
 import style from '../styles/Navbar.module.css'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ReorderIcon from '@mui/icons-material/Reorder'
@@ -16,12 +17,33 @@ function Navbar() {
   const toggleNav = () => {
     setLinks(!openLinks);
   }
+
+  const [imagepath, SwitchImage] = useState(logo)
+
+  const setDark = () => {
+    document.querySelector("body").setAttribute("data-theme", "dark");
+  };
+  const setLight = () => {
+    document.querySelector("body").setAttribute("data-theme", "light");
+  };
+
+  const toggleTheme = e => {
+    if(e.target.checked) {
+      SwitchImage(logo2);
+      setDark();
+    }
+    else{
+      setLight();
+      SwitchImage(logo);
+    } 
+  };
+
   return (
     <div className = {style.navbar} id = {openLinks ? style.open : style.close}>
       <div className = {style.menu} onClick = {toggleNav}>
         <div className = {style.top}>
           <Link href = '/'>
-             <Image className = {style.image} src = {logo} alt = '/'/>
+             <Image className = {style.image} src = {imagepath} alt = '/'/>
           </Link>
           <button onClick={toggleNav}>
               <CloseIcon/>
@@ -41,6 +63,12 @@ function Navbar() {
                 <p>CONTACT</p>
             </Link>
         </div>
+        <div className = {style.mSwitch}>
+             <label className = {style.switch}>
+                <input type = "checkbox" onClick={toggleTheme}/>
+                <span className={style.slider}></span>
+              </label>
+        </div>
         <div className = {style.mSocials}>
             <Link href = "https://www.github.com/visionjwd" target = '_blank'>
               <button><GitHubIcon/></button>
@@ -56,7 +84,7 @@ function Navbar() {
       <div className = {style.nav}> 
         <div className = {style.third} id = 'logo'>
         <Link href = '/'>
-             <Image className = {style.image} src = {logo} alt = '/'/>
+             <Image className = {style.image} priority = {true} src = {imagepath} alt = '/'/>
         </Link>
         </div>
         <div className = {style.third}>
@@ -75,18 +103,11 @@ function Navbar() {
             </Link>
         </div>
         </div>
-        <div className = {style.third}>
-          <div className = {style.contact}>
-            <Link href = "https://www.github.com/visionjwd" target = '_blank'>
-              <button><GitHubIcon/></button>
-            </Link>
-            <Link href = "https://www.linkedin.com/in/junwoooh/" target = '_blank'>
-              <button><LinkedInIcon/></button>
-            </Link>
-            <Link href = "mailto:jwoh@uwaterloo.ca" target='blank'>
-              <button><MailIcon/></button>
-            </Link>
-          </div>
+        <div className = {style.third} id = {style.contact}>
+              <label className = {style.switch}>
+                <input type = "checkbox" onClick= {toggleTheme}/>
+                <span className={style.slider}></span>
+              </label>
         </div>
         <div className = {style.mobile}>
             <button onClick = {toggleNav}><ReorderIcon/></button>

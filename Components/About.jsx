@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image'
 import Skills from '../Components/Skills'
 
 import cad from '../Assets/cad.png'
-import pcb from '../Assets/pcb.png'
+import pcb from '../Assets/pcbblack.png'
 import appdev from '../Assets/appdev.png'
 import fullstack from '../Assets/fullstack.png'
 import ml from '../Assets/ML.png'
@@ -13,6 +13,8 @@ import style from '../styles/About.module.css'
 
 
 function About() {
+  const [themeIcon, setThemeIcon] = useState(false);
+  
   return (
     <div id = 'about' className = {style.main}>
       <div className = {style.textSide}>

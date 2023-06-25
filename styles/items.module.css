@@ -14,12 +14,12 @@
     border-radius: 10px;
     width: 90%;
     height: 80%;
-    background: #f2f4f5;
+    background: var(--container);
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 5px 5px 50px rgba(100,100,100),
-                -20px -20px 60px #ffffff;
+    box-shadow: 5px 5px 50px var(--shadowlight),
+                -20px -20px 60px var(--shadow);
 }
 .under h3{
     font-size: 20px;
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    border: 5px solid #e4eaee;
+    border: 5px solid var(--container);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

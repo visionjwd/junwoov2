@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import pic from '../Assets/portrait.jpg'
-import keyboard from '../Assets/keyboard.png'
 import { Inter } from 'next/font/google'
 import style from '@/styles/Home.module.css'
 

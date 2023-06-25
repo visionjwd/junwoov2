@@ -7,6 +7,9 @@
     justify-content: center;
     overflow: hidden;
 }
+.main h1, .main h2, .main p, .main svg{
+    color: var(--text);
+}
 .contents{
     flex: 85%;
     width: 100%;
@@ -54,7 +57,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0), rgba(250,250,250,0.9));
+    background: var(--gradient);
     position: absolute;
     opacity: 0;
     transition: all 0.5s;
@@ -73,10 +76,10 @@
     height: 32vw;
     width: auto;
     border-radius: 15px;
-    border: 5px solid #f2f4f5;
+    border: 5px solid var(--container);
     overflow: hidden;
-    box-shadow: 20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff;
+    box-shadow: 20px 20px 60px var(--shadowlight),
+    -20px -20px 60px var(--shadow);
 }
 .buttonContainer{
     display: flex;

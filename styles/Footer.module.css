@@ -2,19 +2,22 @@
     width: 100%;
     height: 10vh;
     padding-bottom: 20px;
-    background: rgba(250,250,250,1);
+    background: var(--container);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
+.main p{
+    color: var(--text);
+}
 .footer{
     width: 95%;
     height: 95%;
     border-radius: 10px;
-    background: #f2f4f5;
-    box-shadow: 5px 5px 10px #bebebe,
-                  -5px -5px 10px #ffffff;
+    background: var(--container);
+    box-shadow: 5px 5px 10px var(--shadowlight),
+                  -5px -5px 10px var(--shadow);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,10 +26,8 @@
 .wrap, .text{
     flex: 50%;
 }
-.text{
-
-}
 .image{
+    content: var(--junwoo);
     width: 100px;
     height: auto;
     margin-left: 8%;

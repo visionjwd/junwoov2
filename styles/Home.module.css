@@ -1,8 +1,12 @@
 
 .home{
-  background: #dfe5eb;
-  background-image: url('../Assets/noise.png');
+  background: var(--backgroundclr);
+  background-image: var(--grain);
   background-repeat: repeat;
+  transition: all 0.2s ease;
+}
+.main h1, .main p{
+  color: var(--text);
 }
 .main{
   height: 100vh;
