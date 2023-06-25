@@ -18,7 +18,6 @@ function Navbar() {
     setLinks(!openLinks);
   }
 
-  const [imagepath, SwitchImage] = useState(logo)
 
   const setDark = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");
@@ -29,12 +28,10 @@ function Navbar() {
 
   const toggleTheme = e => {
     if(e.target.checked) {
-      SwitchImage(logo2);
       setDark();
     }
     else{
       setLight();
-      SwitchImage(logo);
     } 
   };
 
@@ -43,7 +40,7 @@ function Navbar() {
       <div className = {style.menu} onClick = {toggleNav}>
         <div className = {style.top}>
           <Link href = '/'>
-             <Image className = {style.image} src = {imagepath} alt = '/'/>
+             <Image className = {style.image} priority = {true} src = {logo} alt = '/'/>
           </Link>
           <button onClick={toggleNav}>
               <CloseIcon/>
@@ -86,7 +83,7 @@ function Navbar() {
       <div className = {style.nav}> 
         <div className = {style.third} id = 'logo'>
         <Link href = '/'>
-             <Image className = {style.image} priority = {true} src = {imagepath} alt = '/'/>
+             <Image className = {style.image} priority = {true} src = {logo} alt = '/'/>
         </Link>
         </div>
         <div className = {style.third}>

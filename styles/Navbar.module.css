@@ -84,7 +84,8 @@
     height: 160px;
     margin-right: 25%;
     transition: all 0.3s ease-out;
-    fill: red;
+    filter: var(--filter);
+
 }
 .image:hover{
     transform: scale(1.02);
