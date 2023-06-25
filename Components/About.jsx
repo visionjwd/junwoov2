@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 import Image from 'next/image'
 import Skills from '../Components/Skills'
 
-import cad from '../Assets/cad.png'
-import pcb from '../Assets/pcbblack.png'
-import appdev from '../Assets/appdev.png'
-import fullstack from '../Assets/fullstack.png'
-import ml from '../Assets/ML.png'
+import cad from '../Assets/cad.svg'
+import pcb from '../Assets/pcbblack.svg'
+import appdev from '../Assets/appdev.svg'
+import fullstack from '../Assets/fullstack.svg'
+import ml from '../Assets/ML.svg'
 
 import aboutImage from '../Assets/portrait.jpg'
 import style from '../styles/About.module.css'
@@ -38,7 +38,7 @@ function About() {
                 <Skills image = {fullstack} text = "FullStack Dev"/>
                 <Skills image = {appdev} text = "App Dev"/>
             </div>
-        </div>
+          </div>
         </div>
       </div>
       <div className = {style.imageSide}>

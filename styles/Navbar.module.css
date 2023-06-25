@@ -133,6 +133,9 @@
     width: 0;
     height: 0;
   }
+.slider:hover{
+    cursor: pointer;
+}
 .slider {
     position: absolute;
     cursor: pointer;
@@ -147,6 +150,8 @@
 .slider:before {
     position: absolute;
     content: "";
+    text-align: center;
+    text-justify: inherit;
     height: 1.4em;
     width: 3.5em;
     border-radius: 5px;
@@ -168,6 +173,39 @@ input:checked + .slider:before {
 .mobile button{
     padding-right: 20px;
 }
+.day svg{
+    position: absolute;
+    top: 0.35em;
+    left: 1.4em;
+    z-index: 1;
+    width: 22px;
+    height: 22px;
+}
+.night svg{
+  position: absolute;
+  top: 0.35em;
+  left: 5.2em;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+}
+.mday svg{
+    position: absolute;
+    z-index: 1;
+    top: 0.18em;
+    left: 0.7em;
+    width: 22px;
+    height: 22px;
+}
+.mnight svg{
+    position: absolute;
+    z-index: 1;
+    top: 0.18em;
+    left: 2.52em;
+    width: 22px;
+    height: 22px;
+}
+
 @media only screen and (max-width: 1050px){
     .container{
         width: 45vw;
