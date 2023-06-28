@@ -72,9 +72,9 @@
 @media only screen and (max-width: 800px){
     .wrapper{
         width: 100%;
-        height: 90vh;
+        height: 100vh;
     }
-    .container{
+    .container{ 
         width: 90%;
         height: 90%;
     }
@@ -94,9 +94,9 @@
     }
     .description{
         width: 100%;
-        height: 56.7vh;
+        height: 63vh;
         margin-left: 0;
-        margin-top: 24.3vh;
+        margin-top: 27vh;
         background: linear-gradient(rgba(0,0,0,0)0%,var(--container)15%);
     }
     .texts{
@@ -110,6 +110,6 @@
         font-size: 40px;
     }
     .texts p{
-        font-size: 15px;
+        font-size: 14px;
     }
 }
