@@ -14,6 +14,9 @@ function ProjectItems(props) {
                 <div className = {style.overContainer}>
                     <h4>Skills: {props.skills}</h4>
                     <p>{props.description}</p>
+                    <Link href = {props.whereTo}>
+                      <button>Details</button>
+                    </Link>
                 </div>
              </div>
              

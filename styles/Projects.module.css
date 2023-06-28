@@ -116,8 +116,12 @@
         font-size: 15px;
         margin-top: 10px;
     }
-    .projectContainer h4, .projectContainer p{
+    .projectContainer h4{
         font-size: 13px;
+        margin-bottom: 0;
+    }
+    .projectContainer p{
+        font-size: 11px;
     }
 }
 @keyframes fade-in{

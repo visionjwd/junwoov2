@@ -1,3 +1,115 @@
 .wrapper{
-    
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border: 3px solid var(--container);
+    box-shadow: 5px 5px 20px var(--shadowlight);
+    border-radius: 10px;
+}
+.imageSide{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+.imageHidden{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+}
+.imageHidden svg{
+    font-size: 50px;
+    color: var(--text);
+    margin-left: 35%;
+    margin-top: 5%;
+    transition: all 0.3s ease-out;
+}
+.imageHidden svg:hover{
+    color: #fff;
+    filter: drop-shadow(0 0 20px #7AABA8);
+}
+.imageHidden:hover{
+    opacity: 1;
+}
+.description{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    margin-left: 30%;
+    background: linear-gradient(0.25turn, rgba(0,0,0,0)0%,var(--container)15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texts{
+    width: 80%;
+    margin-left: 15%;
+    height: 90%;
+}
+.skillList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 800px){
+    .wrapper{
+        width: 100%;
+        height: 90vh;
+    }
+    .container{
+        width: 90%;
+        height: 90%;
+    }
+    .imageSide{
+        width: 100%;
+        height: 45%;
+        background-position: center;
+    }
+    .imageHidden{
+        align-items: center;
+    }
+    .imageHidden svg{
+        font-size: 50px;
+        color: var(--text);
+        margin: 0;
+        margin-bottom: 100%;
+    }
+    .description{
+        width: 100%;
+        height: 56.7vh;
+        margin-left: 0;
+        margin-top: 24.3vh;
+        background: linear-gradient(rgba(0,0,0,0)0%,var(--container)15%);
+    }
+    .texts{
+        width: 85%;
+        margin-left: 0;
+        padding-top: 20%;
+        height: 80%;
+        border-radius: 5px;
+    }
+    .texts h1{
+        font-size: 40px;
+    }
+    .texts p{
+        font-size: 15px;
+    }
 }

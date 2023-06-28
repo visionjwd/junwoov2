@@ -36,13 +36,15 @@ function projects() {
                         bgi = {creativehouse.src}
                         title = "JWD Creative House"
                         skills = "UI/UX design, FullStack Dev"
-                        description = "NextJS web app utilizing Server-Side Rendering, NodeMailer Serverless API, and dynamics sitemap for Google SEO."
+                        description = "NextJS web app with NodeMailer Serverless API and dynamics sitemap for Google SEO."
+                        whereTo = "/Project#webdev"
                     />
                     <ProjectItems
                         bgi = {tmmc.src}
                         title = "TMMC hackathon ML Dev"
                         skills = "Python, OpenCV, Deep Learning"
-                        description = "Developed an object detection model that differentiated between body holes covered in stickers in an automotive manufacturing line. Utilized YoloV8 training model with custom dataset created with RoboFlow."
+                        description = "Object Detection model trained using Roboflow and YoloV8, implemented with OpenCV."
+                        whereTo = "/Project#mldev"
                     />
                 </div>
                 <div className = {style.flex}>
@@ -50,13 +52,15 @@ function projects() {
                         bgi = {macro.src}
                         title = "Macro KeyPad"
                         skills = "CAD, PCB Design, Firmware development"
-                        description = "Custom macro keypad, designed with Fusion 360, custom PCB design with EaglePCB, and utilizes Rasbery Pi PICO running CircuitPy for macro inputs"
+                        description = "Custom macro keypad designed with Fusion 360, custom PCB design and CircuitPy firmware."
+                        whereTo = "/Project#product"
                     />
                     <ProjectItems
                         bgi = {blur.src}
                         title = "Blur - Flutter App"
-                        skills = "Dart, ProgreSQL, API implementation"
+                        skills = "Dart, ProgreSQL, Firebase API"
                         description = "Social Media app that connects university students for entertainment, made by university students."
+                        whereTo = "/Project#flutter"
                     />
                 </div>
             </div>

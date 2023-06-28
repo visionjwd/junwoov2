@@ -18,7 +18,6 @@ function Navbar() {
     setLinks(!openLinks);
   }
 
-
   const setDark = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");
   };
@@ -40,7 +39,7 @@ function Navbar() {
       <div className = {style.menu} onClick = {toggleNav}>
         <div className = {style.top}>
           <Link href = '/'>
-             <Image className = {style.image} priority = {true} src = {logo} alt = '/'/>
+             <Image className = {style.image} priority src = {logo} alt = '/'/>
           </Link>
           <button onClick={toggleNav}>
               <CloseIcon/>
@@ -83,7 +82,7 @@ function Navbar() {
       <div className = {style.nav}> 
         <div className = {style.third} id = 'logo'>
         <Link href = '/'>
-             <Image className = {style.image} priority = {true} src = {logo} alt = '/'/>
+             <Image className = {style.image} priority src = {logo} alt = '/'/>
         </Link>
         </div>
         <div className = {style.third}>
