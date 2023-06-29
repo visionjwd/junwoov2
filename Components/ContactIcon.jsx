@@ -1,7 +1,5 @@
 import React from 'react'
 import style from '../styles/ContactIcon.module.css'
-import Image from 'next/image'
-
 import Link from 'next/link';
 
 
