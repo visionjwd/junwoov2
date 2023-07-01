@@ -15,9 +15,9 @@ function Contact() {
             <p>Reach out to me via any of these:</p>
         </div>
         <div className = {style.flex} id = "logos">
-            <ContactIcon logo = {<GitHubIcon/>} whereTo = "https://www.github.com"/>
+            <ContactIcon logo = {<GitHubIcon/>} whereTo = "https://www.github.com/visionjwd"/>
             <ContactIcon logo = {<LinkedInIcon/>} whereTo = "https://www.Linkedin.com/in/junwoooh/"/>
-            <ContactIcon logo = {<MailIcon/>} whereTo = "mailto: jwoh@uwaterloo.ca"/>
+            <ContactIcon logo = {<MailIcon/>} whereTo = "mailto: visionjwd@gmail.com"/>
         </div>
         </div>
     </div>
