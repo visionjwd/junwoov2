@@ -77,10 +77,9 @@ const Project = () => {
           projectLink = "/"
           projectLink2 = "/"
           title = "Flutter App Development"
-          details = "Social Media app being developed to connect university students in the KW area. Utilizes Flutter for cross-platform functionality, with Google Maps API and Firebase Authentication API utilized for user features. Uses PostgreSQL database to store user data. More details coming..."
-          skill1 = {<Skills image = {firebase} text = "Firebase API"/>}
+          details = "Social Media app being developed to connect university students in the KW area. Utilizes Flutter for cross-platform functionality, with Google Maps API and Firebase Authentication API utilized for user features. Uses Firebase DB for database and utilizes user management and authentication services provided by Firebase. More details coming..."
+          skill1 = {<Skills image = {firebase} text = "Firebase DB"/>}
           skill2 = {<Skills image = {flutter} text = "Flutter"/>}
-          skill3 = {<Skills image = {SQL} text = "PostgreSQL"/>}
         />
         <div className = {style.endPoint}>
           <div className = {style.stylecontainer}>

@@ -58,7 +58,7 @@ function projects() {
                     <ProjectItems
                         bgi = {blur.src}
                         title = "Blur - Flutter App"
-                        skills = "Dart, PostgreSQL, Firebase API"
+                        skills = "Dart, Firebase DB, Firebase Auth/User Management"
                         description = "Social Media app that connects university students for entertainment, made by university students."
                         whereTo = "/Project#flutter"
                     />
