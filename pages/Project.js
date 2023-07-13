@@ -42,7 +42,7 @@ const Project = () => {
           id = "webdev"
           bgi = {webCode.src}
           projectLink = "https://github.com/visionjwd/JWDCreativeHouse"
-          projectLink2 = "https://jwdcreativehouse.netlify.app"
+          projectLink2 = "https://jwdcreativehouse.ca"
           title = "Web Development"
           details = "Developed a NextJS website for JWD Creative House, utilizing server-side rendering for better user experience. NodeMailer serverless API was used for the contact form. A lot of my focus was shifted for SEO, as metatags and keywords were implemented to increase visibility on google. A lot of the unnecessary event loop code was optimized to provide a fast user experience, which also helped with google visibility. "
           skill1 = {<Skills image = {JS}text = "Javascript"/>}
