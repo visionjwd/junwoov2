@@ -24,7 +24,7 @@ function Media() {
                             <p>Media Business serving small businesses in Toronto. Official Media Provide for Importfest, YECS, and other major automotive shows. </p>
                             </div>
                             <div className = {style.buttonContainer}>
-                                <Link href = "https://www.jwdcreativehouse.com" target = "_blank">
+                                <Link href = "https://www.jwdcreativehouse.ca" target = "_blank">
                                     <button>Website</button>
                                 </Link>
                             </div>
