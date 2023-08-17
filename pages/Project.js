@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import arduino from '../Assets/arduino.webp'
-import SQL from '../Assets/SQL.png'
+import Cprogram from '../Assets/C++.png'
 import yolo from '../Assets/yolo.png'
 import firebase from '../Assets/firebase.png'
 import flutter from '../Assets/Flutter.webp'
@@ -21,6 +21,8 @@ import webCode from '../Assets/htmlcode.jpg'
 import MLbgi from '../Assets/MLbgi.jpg'
 import EDA from '../Assets/EDA.jpg'
 import blur from '../Assets/blur.jpg'
+import rubiks from '../Assets/kociemba.jpg'
+import cad from '../Assets/cad.png'
 import style from '../styles/ProjectMore.module.css'
 
 const Project = () => {
@@ -55,7 +57,7 @@ const Project = () => {
           projectLink = "https://colab.research.google.com/drive/1HFnGgaK2demGW-bh237K4d0DfOY9uIhS"
           projectLink2 = "https://app.roboflow.com/ml-dataset/tmmc-gavyg/deploy/3"
           title = "Object Detection ML development"
-          details = "Developed a custom object detection program utilizing YoloV8 and Roboflow as part of Toyota Motor Manufacturing Hackathon in 2023. The model can differentiate whether the body holes on parts is covered with a sticker, uncovered or partially covered. Over 700 sets of images were classified and trained using various iterations of varying exposure, saturation and sharpness."
+          details = "Developed a custom object detection program utilizing YoloV8 and Roboflow as part of Toyota Motor Manufacturing Hackathon in 2023. The model can differentiate whether the body holes on parts is covered with a sticker, uncovered or partially covered. Over 700 sets of images were classified and trained using various iterations of varying exposure, saturation and sharpness systematically selected to be optimized for the test environment, with peak confidence level appraoching 90%. The project was awarded by TMMC for the systematic engineering approach taken."
           skill1 = {<Skills image = {python} text = "Python"/>}
           skill2 = {<Skills image = {openCV} text = "OpenCV"/>}
           skill3 = {<Skills image = {yolo} text = "YoloV8"/>}
@@ -65,7 +67,7 @@ const Project = () => {
           bgi = {EDA.src}
           projectLink = "/"
           projectLink2 = "/"
-          title = "Product Design/development"
+          title = "Macro Keypad Product Development"
           details = "Custom mechanical macro keyboard with fully custom PCB and mechanical enclosure. Firmware developed with CircuitPython, with 3 layers of programmable macro keys and slider settings. PCB was designed using EaglePCB and EasyEDA, and the enclosure was designed with Fusion 360, with the final product being printed with Prusa MK3. "
           skill1 = {<Skills image = {fusion} text = "Solidworks"/>}
           skill2 = {<Skills image = {pcb} text = "PCB Design"/>}
@@ -80,6 +82,16 @@ const Project = () => {
           details = "Social Media app being developed to connect university students in the KW area. Utilizes Flutter for cross-platform functionality, with Google Maps API and Firebase Authentication API utilized for user features. Uses Firebase DB for database and utilizes user management and authentication services provided by Firebase. More details coming..."
           skill1 = {<Skills image = {firebase} text = "Firebase DB"/>}
           skill2 = {<Skills image = {flutter} text = "Flutter"/>}
+        />
+        <Projectdetail
+          id = "Rubiks"
+          bgi = {rubiks.src}
+          projectLink = "https://github.com/makislam/BetterThanU/"
+          projectLink2 = "https://betterthanu.web.app/"
+          title = "Rubiks Cube Solver"
+          details = "Designed and built a Rubiks Cube Solver using Lego EV3 kit, taking advantage of the lego platform to create a 6-axis rotation platform for the Rubiks Cube. A simple software was written in C to run on the mindstorm kit."
+          skill1 = {<Skills image = {Cprogram} text = "C++"/>}
+          skill2 = {<Skills image = {cad} text = "CAD"/>}
         />
         <div className = {style.endPoint}>
           <div className = {style.stylecontainer}>
