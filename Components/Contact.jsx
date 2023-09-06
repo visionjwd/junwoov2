@@ -5,6 +5,7 @@ import ContactIcon from './ContactIcon'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ArticleIcon from '@mui/icons-material/Article';
 
 function Contact() {
   return (
@@ -18,6 +19,7 @@ function Contact() {
             <ContactIcon logo = {<GitHubIcon/>} whereTo = "https://www.github.com/visionjwd"/>
             <ContactIcon logo = {<LinkedInIcon/>} whereTo = "https://www.Linkedin.com/in/junwoooh/"/>
             <ContactIcon logo = {<MailIcon/>} whereTo = "mailto: visionjwd@gmail.com"/>
+            <ContactIcon logo = {<ArticleIcon/>} whereTo = "https://docs.google.com"/>
         </div>
         </div>
     </div>

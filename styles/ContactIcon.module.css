@@ -9,7 +9,7 @@
     background: #96ab7a;
     border: 2px solid #96ab7a;
     transition: all 0.4s;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 .wrapper:hover{
     border: 2px solid black;

@@ -6,11 +6,9 @@ import Link from 'next/link';
 
 function ContactIcon(props) {
   return (
-    <div className = {style.wrapper}>
-        <Link href = {props.whereTo} target = "_blank">
-            {props.logo}
-        </Link>
-    </div>
+    <Link href = {props.whereTo} target = "_blank" className = {style.wrapper}>
+          {props.logo}
+    </Link>
   )
 }
 
