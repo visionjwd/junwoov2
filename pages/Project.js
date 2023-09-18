@@ -65,7 +65,7 @@ const Project = () => {
         <Projectdetail
           id = "product"
           bgi = {EDA.src}
-          projectLink = "/"
+          projectLink = "https://github.com/visionjwd/macrofirmware"
           projectLink2 = "/"
           title = "Macro Keypad Product Development"
           details = "Custom mechanical macro keyboard with fully custom PCB and mechanical enclosure. Firmware developed with CircuitPython, with 3 layers of programmable macro keys and slider settings. PCB was designed using EaglePCB and EasyEDA, and the enclosure was designed with Fusion 360, with the final product being printed with Prusa MK3. "
@@ -76,7 +76,7 @@ const Project = () => {
         <Projectdetail
           id = "flutter"
           bgi = {blur.src}
-          projectLink = "/"
+          projectLink = "https://github.com/AidanBilon/Blur"
           projectLink2 = "/"
           title = "Flutter App Development"
           details = "Social Media app being developed to connect university students in the KW area. Utilizes Flutter for cross-platform functionality, with Google Maps API and Firebase Authentication API utilized for user features. Uses Firebase DB for database and utilizes user management and authentication services provided by Firebase. More details coming..."
