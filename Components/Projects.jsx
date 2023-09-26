@@ -33,11 +33,11 @@ function projects() {
             <div className = {style.projectContainer}>
                 <div className = {style.flex}>
                     <ProjectItems
-                        bgi = {creativehouse.src}
-                        title = "JWD Creative House"
-                        skills = "UI/UX design, FullStack Dev"
-                        description = "NextJS web app with NodeMailer Serverless API and dynamics sitemap for Google SEO."
-                        whereTo = "/Project#webdev"
+                        bgi = {macro.src}
+                        title = "Macro KeyPad"
+                        skills = "CAD, PCB Design, Firmware development"
+                        description = "Custom macro keypad designed with Fusion 360, custom PCB design and CircuitPy firmware."
+                        whereTo = "/Project#product"
                     />
                     <ProjectItems
                         bgi = {tmmc.src}
@@ -49,11 +49,11 @@ function projects() {
                 </div>
                 <div className = {style.flex}>
                     <ProjectItems
-                        bgi = {macro.src}
-                        title = "Macro KeyPad"
-                        skills = "CAD, PCB Design, Firmware development"
-                        description = "Custom macro keypad designed with Fusion 360, custom PCB design and CircuitPy firmware."
-                        whereTo = "/Project#product"
+                        bgi = {creativehouse.src}
+                        title = "JWD Creative House"
+                        skills = "UI/UX design, FullStack Dev"
+                        description = "NextJS web app with NodeMailer Serverless API and dynamics sitemap for Google SEO."
+                        whereTo = "/Project#webdev"
                     />
                     <ProjectItems
                         bgi = {blur.src}

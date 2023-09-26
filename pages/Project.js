@@ -41,15 +41,15 @@ const Project = () => {
       </div>
       <h1>Projects</h1>
         <Projectdetail
-          id = "webdev"
-          bgi = {webCode.src}
-          projectLink = "https://github.com/visionjwd/JWDCreativeHouse"
-          projectLink2 = "https://jwdcreativehouse.ca"
-          title = "Web Development"
-          details = "Developed a NextJS website for JWD Creative House, utilizing server-side rendering for better user experience. NodeMailer serverless API was used for the contact form. A lot of my focus was shifted for SEO, as metatags and keywords were implemented to increase visibility on google. A lot of the unnecessary event loop code was optimized to provide a fast user experience, which also helped with google visibility. "
-          skill1 = {<Skills image = {JS}text = "Javascript"/>}
-          skill2 = {<Skills image = {uiux}text = "UI/UX"/>}
-          skill3 = {<Skills image = {nodeJS}text = "NodeJS"/>}
+          id = "product"
+          bgi = {EDA.src}
+          projectLink = "https://github.com/visionjwd/macrofirmware"
+          projectLink2 = "/"
+          title = "Macro Keypad Product Development"
+          details = "Custom mechanical macro keyboard with fully custom PCB and mechanical enclosure. Firmware developed with CircuitPython, with 3 layers of programmable macro keys and slider settings. PCB was designed using EaglePCB and EasyEDA, and the enclosure was designed with Fusion 360, with the final product being printed with Prusa MK3. "
+          skill1 = {<Skills image = {fusion} text = "Solidworks"/>}
+          skill2 = {<Skills image = {pcb} text = "PCB Design"/>}
+          skill3 = {<Skills image = {arduino} text = "MicroControllers"/>}
         />
         <Projectdetail
           id = "mldev"
@@ -63,15 +63,25 @@ const Project = () => {
           skill3 = {<Skills image = {yolo} text = "YoloV8"/>}
         />
         <Projectdetail
-          id = "product"
-          bgi = {EDA.src}
-          projectLink = "https://github.com/visionjwd/macrofirmware"
-          projectLink2 = "/"
-          title = "Macro Keypad Product Development"
-          details = "Custom mechanical macro keyboard with fully custom PCB and mechanical enclosure. Firmware developed with CircuitPython, with 3 layers of programmable macro keys and slider settings. PCB was designed using EaglePCB and EasyEDA, and the enclosure was designed with Fusion 360, with the final product being printed with Prusa MK3. "
-          skill1 = {<Skills image = {fusion} text = "Solidworks"/>}
-          skill2 = {<Skills image = {pcb} text = "PCB Design"/>}
-          skill3 = {<Skills image = {arduino} text = "MicroControllers"/>}
+          id = "Rubiks"
+          bgi = {rubiks.src}
+          projectLink = "https://github.com/makislam/BetterThanU/"
+          projectLink2 = "https://betterthanu.web.app/"
+          title = "Rubiks Cube Solver"
+          details = "Designed and built a Rubiks Cube Solver using Lego EV3 kit, taking advantage of the lego platform to create a 6-axis rotation platform for the Rubiks Cube. A simple software was written in C to run on the mindstorm kit."
+          skill1 = {<Skills image = {Cprogram} text = "C++"/>}
+          skill2 = {<Skills image = {cad} text = "CAD"/>}
+        />
+        <Projectdetail
+          id = "webdev"
+          bgi = {webCode.src}
+          projectLink = "https://github.com/visionjwd/JWDCreativeHouse"
+          projectLink2 = "https://jwdcreativehouse.ca"
+          title = "Web Development"
+          details = "Developed a NextJS website for JWD Creative House, utilizing server-side rendering for better user experience. NodeMailer serverless API was used for the contact form. A lot of my focus was shifted for SEO, as metatags and keywords were implemented to increase visibility on google. A lot of the unnecessary event loop code was optimized to provide a fast user experience, which also helped with google visibility. "
+          skill1 = {<Skills image = {JS}text = "Javascript"/>}
+          skill2 = {<Skills image = {uiux}text = "UI/UX"/>}
+          skill3 = {<Skills image = {nodeJS}text = "NodeJS"/>}
         />
         <Projectdetail
           id = "flutter"
@@ -83,16 +93,7 @@ const Project = () => {
           skill1 = {<Skills image = {firebase} text = "Firebase DB"/>}
           skill2 = {<Skills image = {flutter} text = "Flutter"/>}
         />
-        <Projectdetail
-          id = "Rubiks"
-          bgi = {rubiks.src}
-          projectLink = "https://github.com/makislam/BetterThanU/"
-          projectLink2 = "https://betterthanu.web.app/"
-          title = "Rubiks Cube Solver"
-          details = "Designed and built a Rubiks Cube Solver using Lego EV3 kit, taking advantage of the lego platform to create a 6-axis rotation platform for the Rubiks Cube. A simple software was written in C to run on the mindstorm kit."
-          skill1 = {<Skills image = {Cprogram} text = "C++"/>}
-          skill2 = {<Skills image = {cad} text = "CAD"/>}
-        />
+        
         <div className = {style.endPoint}>
           <div className = {style.stylecontainer}>
           <h2>
