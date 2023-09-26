@@ -24,7 +24,13 @@ export default function Home() {
         <div className = {style.main}>
           <div className = {style.centre}>
           <p>- Portfolio -</p>
-          <h1>Hi, I&#39;m JunWoo <br/><span>Engineer</span>,<span> Developer</span>,<span> Creator</span> </h1>
+          <h1>Hi, I&#39;m <span id = "letter">J</span>
+                          <span id = "letter">u</span>
+                          <span id = "letter">n</span>
+                          <span id = "letter">W</span>
+                          <span id = "letter">o</span>
+                          <span id = "letter">o</span>
+                          <br/><span>Engineer</span>,<span> Developer</span>,<span> Creator</span> </h1>
           <Link href = '/#projects'>
             <button>Explore</button>
           </Link>

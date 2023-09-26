@@ -36,6 +36,12 @@
 }
 .centre span:hover{
   color: 	#96ab7a;
+  animation: bounce 0.5s ease forwards;
+}
+#letter:hover{
+  color: 	#7AABA8;
+  font-size: 55px;
+
 }
 .centre button{
   font-size: 20px;
@@ -48,6 +54,18 @@
   .home h1{
     font-size: 30px;
     margin-bottom: 10%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
