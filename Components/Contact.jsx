@@ -19,7 +19,6 @@ function Contact() {
             <ContactIcon logo = {<GitHubIcon/>} whereTo = "https://www.github.com/visionjwd"/>
             <ContactIcon logo = {<LinkedInIcon/>} whereTo = "https://www.Linkedin.com/in/junwoooh/"/>
             <ContactIcon logo = {<MailIcon/>} whereTo = "mailto: visionjwd@gmail.com"/>
-            <ContactIcon logo = {<ArticleIcon/>} whereTo = "https://docs.google.com"/>
         </div>
         </div>
     </div>

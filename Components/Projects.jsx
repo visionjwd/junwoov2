@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import creativehouse from '../Assets/creativehouse.jpg'
+import rearwing from '../Assets/rearwing1.jpg'
 import tmmc from '../Assets/TMMC.jpg'
 import ProjectItems from './ProjectItems';
 import blur from '../Assets/blur.jpg'
@@ -49,11 +49,11 @@ function projects() {
                 </div>
                 <div className = {style.flex}>
                     <ProjectItems
-                        bgi = {creativehouse.src}
-                        title = "JWD Creative House"
-                        skills = "UI/UX design, FullStack Dev"
-                        description = "NextJS web app with NodeMailer Serverless API and dynamics sitemap for Google SEO."
-                        whereTo = "/Project#webdev"
+                        bgi = {rearwing.src}
+                        title = "UWFE Fixture Design CAD"
+                        skills = "SOLIDWORKS, CAD"
+                        description = "Tie Rod based rear wing fixture design for UW Formula SAE made in SOLIDWORKS."
+                        whereTo = "/Project#wingdesign"
                     />
                     <ProjectItems
                         bgi = {blur.src}
@@ -62,6 +62,7 @@ function projects() {
                         description = "Social Media app that connects university students for entertainment, made by university students."
                         whereTo = "/Project#flutter"
                     />
+                    
                 </div>
             </div>
         </div>

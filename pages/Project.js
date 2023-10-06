@@ -24,6 +24,9 @@ import blur from '../Assets/blur.jpg'
 import rubiks from '../Assets/kociemba.jpg'
 import cad from '../Assets/cad.png'
 import style from '../styles/ProjectMore.module.css'
+import rearwing2 from '../Assets/rearwing2.jpg'
+import solidworks from '../Assets/Solidworks.png'
+import fea from '../Assets/FEA.png'
 
 const Project = () => {
   return (
@@ -46,10 +49,20 @@ const Project = () => {
           projectLink = "https://github.com/visionjwd/macrofirmware"
           projectLink2 = "/"
           title = "Macro Keypad Product Development"
-          details = "Custom mechanical macro keyboard with fully custom PCB and mechanical enclosure. Firmware developed with CircuitPython, with 3 layers of programmable macro keys and slider settings. PCB was designed using EaglePCB and EasyEDA, and the enclosure was designed with Fusion 360, with the final product being printed with Prusa MK3. "
+          details = "Custom mechanical macro keyboard with fully custom PCB and mechanical enclosure. Firmware developed with CircuitPython, with 3 layers of programmable macro keys and slider settings. PCB was designed using EaglePCB and EasyEDA, and the enclosure was designed with Fusion 360, with the final product being printed with Prusa MK3. The encasing was designed to be toolless with easy access to the microcontroller, as well as abiding by DFMA principles for easy of manufacturing. "
           skill1 = {<Skills image = {fusion} text = "Solidworks"/>}
           skill2 = {<Skills image = {pcb} text = "PCB Design"/>}
           skill3 = {<Skills image = {arduino} text = "MicroControllers"/>}
+        />
+        <Projectdetail
+          id = "wingdesign"
+          bgi = {rearwing2.src}
+          projectLink = "www.junwooo.me"
+          projectLink2 = "www.junwooo.me"
+          title = "Rear Wing Fixture CAD"
+          details = "Designed an alternative rear wing fixture mechanism for the 2023 spec UW Formula SAE car. SOLIDWORKS was utilized to create the fixtures, utilizing standardized parts within the car's ecosystem and tie rods that fit the dimensions. Advanced mating system and mechanical mates were implemented to integrate the designed parts into the assembly. Proper GD&T was implemented to aid the manufacturing process. To ensure similar load distribution and support, FEA was conducted in SOLIDWORKS."
+          skill1 = {<Skills image = {solidworks} text = "Solidworks"/>}
+          skill2 = {<Skills image = {fea} text = "FEA"/>}
         />
         <Projectdetail
           id = "mldev"
