@@ -27,6 +27,7 @@ import style from '../styles/ProjectMore.module.css'
 import rearwing2 from '../Assets/rearwing2.jpg'
 import solidworks from '../Assets/Solidworks.png'
 import fea from '../Assets/FEA.png'
+import ansys from '../Assets/Ansys.png'
 
 const Project = () => {
   return (
@@ -63,6 +64,7 @@ const Project = () => {
           details = "Designed an alternative rear wing fixture mechanism for the 2023 spec UW Formula SAE car. SOLIDWORKS was utilized to create the fixtures, utilizing standardized parts within the car's ecosystem and tie rods that fit the dimensions. Advanced mating system and mechanical mates were implemented to integrate the designed parts into the assembly. Proper GD&T was implemented to aid the manufacturing process. To ensure similar load distribution and support, FEA was conducted in SOLIDWORKS."
           skill1 = {<Skills image = {solidworks} text = "Solidworks"/>}
           skill2 = {<Skills image = {fea} text = "FEA"/>}
+          skill3 = {<Skills image = {ansys} text = "CFD Analysis"/>}
         />
         <Projectdetail
           id = "mldev"
