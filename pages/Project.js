@@ -28,6 +28,7 @@ import rearwing2 from '../Assets/rearwing2.jpg'
 import solidworks from '../Assets/Solidworks.png'
 import fea from '../Assets/FEA.png'
 import ansys from '../Assets/Ansys.png'
+import wec from '../Assets/WEC.jpg'
 
 const Project = () => {
   return (
@@ -71,7 +72,7 @@ const Project = () => {
           bgi = {MLbgi.src}
           projectLink = "https://colab.research.google.com/drive/1HFnGgaK2demGW-bh237K4d0DfOY9uIhS"
           projectLink2 = "https://app.roboflow.com/ml-dataset/tmmc-gavyg/deploy/3"
-          title = "Object Detection ML development"
+          title = "Manufacturing Plant Automation System"
           details = "Developed a custom object detection program utilizing YoloV8 and Roboflow as part of Toyota Motor Manufacturing Hackathon in 2023. The model can differentiate whether the body holes on parts is covered with a sticker, uncovered or partially covered. Over 700 sets of images were classified and trained using various iterations of varying exposure, saturation and sharpness systematically selected to be optimized for the test environment, with peak confidence level appraoching 90%. The project was awarded by TMMC for the systematic engineering approach taken."
           skill1 = {<Skills image = {python} text = "Python"/>}
           skill2 = {<Skills image = {openCV} text = "OpenCV"/>}
@@ -86,6 +87,17 @@ const Project = () => {
           details = "Designed and built a Rubiks Cube Solver using Lego EV3 kit, taking advantage of the lego platform to create a 6-axis rotation platform for the Rubiks Cube. A simple software was written in C to run on the mindstorm kit."
           skill1 = {<Skills image = {Cprogram} text = "C++"/>}
           skill2 = {<Skills image = {cad} text = "CAD"/>}
+        />
+        <Projectdetail
+          id = "WEC"
+          bgi = {wec.src}
+          projectLink = "https://github.com/visionjwd"
+          projectLink2 = "https://junwooo.me"
+          title = "Waste Collection Robot - WEC 2023"
+          details = "Designed and built a waste collection robot as part of the Waterloo Engineering Competition 2023. The mechanical enclosure of the robot allowed for collection of the simulated contaminants on the course, with it being controlled by a laptop. Utilizing python, movement inputs were able to be sent at 15 inputs per second, a drastic improvement compared to utilizing Arduino IDE."
+          skill1 = {<Skills image = {Cprogram} text = "C++"/>}
+          skill2 = {<Skills image = {cad} text = "CAD"/>}
+          skill3 = {<Skills image = {python} text = "Python"/>}
         />
         <Projectdetail
           id = "webdev"
