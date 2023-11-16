@@ -79,16 +79,6 @@ const Project = () => {
           skill3 = {<Skills image = {yolo} text = "YoloV8"/>}
         />
         <Projectdetail
-          id = "Rubiks"
-          bgi = {rubiks.src}
-          projectLink = "https://github.com/makislam/BetterThanU/"
-          projectLink2 = "https://betterthanu.web.app/"
-          title = "Rubiks Cube Solver"
-          details = "Designed and built a Rubiks Cube Solver using Lego EV3 kit, taking advantage of the lego platform to create a 6-axis rotation platform for the Rubiks Cube. A simple software was written in C to run on the mindstorm kit."
-          skill1 = {<Skills image = {Cprogram} text = "C++"/>}
-          skill2 = {<Skills image = {cad} text = "CAD"/>}
-        />
-        <Projectdetail
           id = "WEC"
           bgi = {wec.src}
           projectLink = "https://github.com/visionjwd"
@@ -99,6 +89,17 @@ const Project = () => {
           skill2 = {<Skills image = {cad} text = "CAD"/>}
           skill3 = {<Skills image = {python} text = "Python"/>}
         />
+        <Projectdetail
+          id = "Rubiks"
+          bgi = {rubiks.src}
+          projectLink = "https://github.com/makislam/BetterThanU/"
+          projectLink2 = "https://betterthanu.web.app/"
+          title = "Rubiks Cube Solver"
+          details = "Designed and built a Rubiks Cube Solver using Lego EV3 kit, taking advantage of the lego platform to create a 6-axis rotation platform for the Rubiks Cube. A simple software was written in C to run on the mindstorm kit."
+          skill1 = {<Skills image = {Cprogram} text = "C++"/>}
+          skill2 = {<Skills image = {cad} text = "CAD"/>}
+        />
+        
         <Projectdetail
           id = "webdev"
           bgi = {webCode.src}

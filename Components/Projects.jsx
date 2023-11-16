@@ -6,6 +6,7 @@ import ProjectItems from './ProjectItems';
 import blur from '../Assets/blur.jpg'
 import macro from '../Assets/Macro.jpg'
 import style from '../styles/Projects.module.css'
+import wec from '../Assets/WEC.jpg'
 import Link from 'next/link';
 
 function projects() {
@@ -56,11 +57,11 @@ function projects() {
                         whereTo = "/Project#wingdesign"
                     />
                     <ProjectItems
-                        bgi = {blur.src}
-                        title = "Blur - Flutter App"
-                        skills = "Dart, Firebase DB, Firebase Auth/User Management"
-                        description = "Social Media app that connects university students for entertainment, made by university students."
-                        whereTo = "/Project#flutter"
+                        bgi = {wec.src}
+                        title = "Waste Collection Robot - WEC"
+                        skills = "Rapid Prototyping, Arduino, Breadboard Circuit Design"
+                        description = "Waste Collection robot developed for Waterloo Engineering Competition Senior Design Challenge."
+                        whereTo = "/Project#WEC"
                     />
                     
                 </div>
